@@ -43,5 +43,12 @@ CREATE TABLE "Contact" (
      )
 );
 
+ALTER TABLE "Category" ADD CONSTRAINT "fk_Category_category_id" FOREIGN KEY("category_id")
+REFERENCES "Campaign" ("category_id");
 
+ALTER TABLE "Subcategory" ADD CONSTRAINT "fk_Subcategory_subcategory_id" FOREIGN KEY("subcategory_id")
+REFERENCES "Campaign" ("subcategory_id");
+
+ALTER TABLE "Contact" ADD CONSTRAINT "fk_Contact_contact_id" FOREIGN KEY("contact_id")
+REFERENCES "Campaign" ("contact_id");
 
