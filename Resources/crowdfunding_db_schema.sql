@@ -27,9 +27,10 @@ CREATE TABLE "Contact" (
 CREATE TABLE "Campaign" (
     "cf_id" INT   NOT NULL,
     "contact_id" INT   NOT NULL,
+	"company_name" Varchar(250) Not Null,
     "description" Varchar(250)   NOT NULL,
-    "goal" INT   NOT NULL,
-    "pledged" INT   NOT NULL,
+    "goal" Float  NOT NULL,
+    "pledged" FLoat NOT NULL,
     "outcome" Varchar(250)   NOT NULL,
     "backers_count" INT   NOT NULL,
     "country" Varchar(250)   NOT NULL,
